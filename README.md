@@ -1,6 +1,6 @@
 # myreads - An Udacity's React nanodegree project
 
-This is a project built for the Udacity's React nanodegree with the help of create-react-app
+This is a project built for the Udacity's React nanodegree with the help of [create-react-app](https://github.com/facebookincubator/create-react-app)
 
 # Documentation
 
