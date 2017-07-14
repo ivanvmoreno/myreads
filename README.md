@@ -8,6 +8,7 @@ This is a project built for the Udacity's React nanodegree with the help of [cre
 
 Here we'll describe the behavior of the functions used in the project
 
+
 ###  getBooks()
 
 `getBooks()` will fetch the BooksAPI and store the array of books into the `App` component's state.
@@ -21,6 +22,7 @@ getBooks = () => {
 }
 ```
 
+
 ### moveBook()
 
 `moveBook()` will take in the ID of a book (in object notation) and a destination shelf to call `BooksAPI.update()` with those parameters.
@@ -32,6 +34,7 @@ moveBook = (id, shelf) => {
   this.getBooks()
 }
 ```
+
 
 ### searchBooks()
 
