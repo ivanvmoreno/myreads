@@ -14,7 +14,6 @@ Here we'll describe the behavior of the functions used in the project
 
 
 ```
-
 getBooks = () => {
   BooksAPI.getAll().then(books => {
     this.setState({books})
@@ -28,7 +27,6 @@ getBooks = () => {
 
 
 ```
-
 moveBook = (id, shelf) => {
   BooksAPI.update(id,shelf)
   this.getBooks()
