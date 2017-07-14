@@ -36,7 +36,9 @@ moveBook = (id, shelf) => {
 ### searchBooks()
 
 `searchBooks()` fetches the query via the `BooksAPI.search` and checks if the user input is valid before making the request.
+
 Also, it'll check if the response is valid before storing it into the `Search` component's state.
+
 If the user input is blank, or `''`, the method will clear the `Search` component's state.
 
 ```
