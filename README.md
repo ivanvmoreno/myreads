@@ -32,3 +32,26 @@ moveBook = (id, shelf) => {
   this.getBooks()
 }
 ```
+
+### searchBooks()
+
+`searchBooks()` fetches the query via the `BooksAPI.search` and checks if the user input is valid before making the request.
+Also, it'll check if the response is valid before storing it into the `Search` component's state.
+If the user input is blank, or `''`, the method will clear the `Search` component's state.
+
+```
+searchBooks = (query) => {
+    if (query !== '') {
+      BooksAPI.search(query).then(result => {
+        if (Array.isArray(result)) {
+          let array = result.map(book => ({title : book.title, authors : book.authors, thumbnail : book.imageLinks.thumbnail, shelf : book.shelf, id : book.id}))
+          this.setState({booksArray : array})}
+        }
+      )
+    } else {
+      this.setState({
+        booksArray : []
+      })
+    }
+}
+```
