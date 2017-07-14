@@ -57,3 +57,16 @@ searchBooks = (query) => {
     }
 }
 ```
+
+### clearSearch()
+
+`clearSearch()` will clear both `Search` component's state and the search input.
+
+```
+clearSearch = () => {
+  this.setState({
+    booksArray : []
+  })
+  document.getElementById('search-input').value = ''
+}
+```
