@@ -1,3 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.hr {
+  width:70%;
+  margin-left: 15%;
+  border-bottom:1px solid rgba(0,0,0,.7);
+  text-align: center !important;
+}
+
+.hr a {
+  width: 100%;
+  opacity: 1 !important;
+}
+
+#bookMenu {
+  display: none;
+}
+
 #logo {
   text-align: center;
   margin-top: 20px;
@@ -91,6 +113,11 @@ ol {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   background: #eee;
 }
+
+.book-cover li {
+  list-style-type: none;
+}
+
 .book-cover-title {
   padding: 20px 10px 0;
   text-align: center;
